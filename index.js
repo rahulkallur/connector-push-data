@@ -16,7 +16,7 @@ const kafka = new Kafka({
 
 // Consumer
 const consumerData = kafka.consumer({
-  groupId: "push-data-service-group",
+  groupId: "push-data-service-group-kinesis",
 });
 
 // Producer
