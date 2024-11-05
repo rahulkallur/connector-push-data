@@ -64,6 +64,7 @@ const run = async () => {
 
 run().catch("run error: ", console.error);
 
+// Consumer Crash Events
 consumerData.on("consumer.crash", function () {
   console.log("Crash detected");
   process.exit(0);
