@@ -45,7 +45,7 @@ const run = async () => {
           payloadArr.push(obj);
 
           await producer.send({
-            topic: process.env.PUBLISH_TRACK_TOPIC,
+            topic: process.env.PUBLISH_TOPIC,
             messages: [
               {
                 key: payLoadParsed.imeiNo,
